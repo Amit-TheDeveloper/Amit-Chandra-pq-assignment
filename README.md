@@ -5,9 +5,13 @@ This project has been developed to add, update, remove and get stocks.
 * JDK 17
 * H2 Database
 * Maven
-* you can see APIs: [Swagger](http://localhost:9091/swagger-ui.html#)
+* You can see APIs: [Swagger](http://localhost:9091/swagger-ui/index.html#)
+* H2-Console link: [H2-Console](http://localhost:9091/h2-console/login.jsp)
 * 
-Spring Boot application can be run simply by invoking StockserviceApplication class.
+* Spring Boot application can be run simply by invoking StockserviceApplication class.
+* As the application follows security for the resources, first thing is to get the access token.
+* Once the application is up, access token can be obtained by invoking the security API : [api/v1/stock/signup]
+* Use the same token to execute the application requests.
 ##
 
 
