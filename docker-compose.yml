@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  springboot-app-container:
+    container_name: stockservice-springboot-app
+    image: stockservice:latest
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - /data/stock-app
+    ports:
+      - "9091:9091"
+networks:
+  network:
+  
